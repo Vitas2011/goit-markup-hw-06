@@ -50,10 +50,15 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btm" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Hero Section -->
-    <main class="hero-section">
+    <main class="hero-section hidden">
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -63,7 +68,7 @@
         </div>
       </section>
       <!-- Features Section -->
-      <section class="features">
+      <section class="features hidden">
         <div class="container features-container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="features-list">
@@ -119,7 +124,7 @@
         </div>
       </section>
       <!-- Team Section -->
-      <section class="team">
+      <section class="team hidden">
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -283,7 +288,7 @@
         </div>
       </section>
       <!-- Portfolio Section -->
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container portfolio-container">
           <h2 class="our-portfolio">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -406,7 +411,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-div">
         <div class="footer-container">
           <a class="logo logo-web">WEB<span class="studio">Studio</span></a>
@@ -470,7 +475,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button type="button" class="modal-close-btm">
           <svg class="icons-close" width="8" height="8">
@@ -546,7 +551,6 @@
               >I accept the terms and conditions of the&nbsp;
               <a class="modal-check-a" href="">Privacy Policy</a>
             </label>
-            <p>bu</p>
           </div>
           <button class="modal-btm" type="button">Send</button>
         </form>
