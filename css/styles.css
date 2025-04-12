@@ -354,7 +354,7 @@ button {
 /* Hero Section */
 
 .hero-container {
-    padding: 72px 52px 72px 52px;
+    padding: 72px 0 72px 0;
 }
 
 .hero {
@@ -411,7 +411,7 @@ margin: 0 auto;
 
 @media screen and (min-width: 768px) {
   .hero-container {
-     padding: 112px 136px 112px 136px;
+     padding: 112px 0 112px 0;
     }
      
     .hero {
