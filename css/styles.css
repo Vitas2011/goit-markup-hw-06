@@ -350,3 +350,109 @@ button {
      display: none;
     } 
 }
+
+/* Hero Section */
+
+.hero-container {
+    padding: 72px 52px 72px 52px;
+}
+
+.hero {
+background-color: #2e2f42;
+background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/dark-mob-1x.jpg),url(../images/dark-mob-2x.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+margin: 0 auto;
+}
+
+.hero-title {
+    font-weight: 700px;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin: 0 auto;
+    max-width: 216px;
+    text-align: center;
+}
+
+.but-hero {
+    display: block;
+    background-color: #4D5AE5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    min-width: 169px;
+    min-height: 56px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    align-items: center;
+    margin-top: 48px;
+    height: 56px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250mbezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404BBF;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+     padding: 112px 136px 112px 136px;
+    }
+     
+    .hero {
+        background-image: linear-gradient(
+         rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)),
+         url(../images/dark-tab-1x.jpg),url(../images/dark-tab-2x.jpg);
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        max-height: 120px;
+    }
+
+    .but-hero {
+        margin-top: 36px;
+        margin-bottom: 0;   
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero-container {
+        padding: 188px 0 188px 0;
+    }
+
+    .hero {
+        background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+          url(../images/dark-net-1x.jpg),url(../images/dark-net-2x.jpg);
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
+
+    .but-hero {
+        margin-top: 48px;   
+    }
+}
