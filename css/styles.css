@@ -70,9 +70,6 @@ button {
 }
 
 .header-container {
-    margin-left: 141px;
-    margin-right: 141px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -365,12 +362,26 @@ background-color: #2e2f42;
 background-image: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/dark-mob-1x.jpg),url(../images/dark-mob-2x.jpg);
+    url(../images/dark-mob-1x.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 margin: 0 auto;
 }
+
+@media screen and (min-resolution: 2x) {
+    .hero {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/dark-mob-2x.jpg); 
+    }
+}
+ 
+    
+ 
+    
+
 
 .hero-title {
     font-weight: 700px;
@@ -421,7 +432,16 @@ margin: 0 auto;
         background-image: linear-gradient(
          rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)),
-         url(../images/dark-tab-1x.jpg),url(../images/dark-tab-2x.jpg);
+         url(../images/dark-tab-1x.jpg);
+    }
+
+    @media screen and (min-resolution: 2x) {
+        .hero {
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url(../images/dark-tab-2x.jpg); 
+        }
     }
 
     .hero-title {
@@ -446,7 +466,16 @@ margin: 0 auto;
         background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
-          url(../images/dark-net-1x.jpg),url(../images/dark-net-2x.jpg);
+          url(../images/dark-net-1x.jpg);
+    }
+
+    @media screen and (min-resolution: 2x) {
+        .hero {
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url(../images/dark-net-2x.jpg); 
+        }
     }
 
     .hero-title {
@@ -481,7 +510,6 @@ margin: 0 auto;
 }
 
 .features-head {
- text-align: center;
  font-weight: 700;
  font-size: 36px;
  line-height: 1.11;
@@ -513,7 +541,11 @@ margin: 0 auto;
     }
 
     .features-head {
-        text-align:start; 
+        text-align: start; 
+    }
+
+    .features-p {
+        text-align: start; 
     }
 }
 
@@ -567,3 +599,136 @@ margin: 0 auto;
     }
 }
 
+/* Team Section */
+
+.team {
+    background-color: #F4F4FD;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.team-title {
+    font-weight: 700;
+    margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+}
+
+.team-list-section {
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    flex-basis: calc((100% - 72) / 4);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    border-radius: 0 0 4px 4px;
+}
+
+.team-people {
+    padding: 32px 16px;
+}
+
+.fhc {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    margin-bottom: 8px;
+}
+
+.fpc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+    margin-bottom: 8px;
+}
+
+.team-people-i {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.people-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.soc-icons {
+    width: 100%;  
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #F4F4FD;
+    cursor: pointer;
+}
+
+.soc-icons:focus,
+.soc-icons:hover {
+    background-color: #31D0AA;
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        gap: 64px 24px;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .team-list {
+        flex-direction: row;
+      /*  flex-wrap: wrap;*/
+        margin-bottom: 0;
+        gap: 24px;
+        justify-content: center;
+    }
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.our-portfolio  {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px; 
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    list-style: none;
+ }
