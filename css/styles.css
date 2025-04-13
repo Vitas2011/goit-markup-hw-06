@@ -70,6 +70,9 @@ button {
 }
 
 .header-container {
+    margin-left: 141px;
+    margin-right: 141px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -199,7 +202,7 @@ button {
 
 @media screen and (min-width: 1158px) {
 
-    .address-ul {
+    .address-ul { 
       flex-direction: row;
       align-items: center;
       gap: 40px;
@@ -456,3 +459,111 @@ margin: 0 auto;
         margin-top: 48px;   
     }
 }
+
+/* Features Section*/
+
+.features-container {
+  padding: 96px 16px 96px 16px;
+}
+
+.features-paragraph-icons {
+    display: none;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;  
+}
+
+.features-paragraph {
+    width: 100%;  
+}
+
+.features-head {
+ text-align: center;
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.11;
+ letter-spacing: 0.02em;
+ color: #2E2F42; 
+ margin-bottom: 8px;
+}
+
+.features-p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;   
+}
+
+@media screen and (min-width: 768px) {
+    .features-list {
+        flex-direction: row;
+        margin-bottom: 0;
+        gap: 72px 24px;
+        
+    }
+
+    .features-paragraph {
+        max-width: 356px;
+        max-height: 120px;
+        width: calc((100% - 24px) / 2);
+    }
+
+    .features-head {
+        text-align:start; 
+    }
+}
+
+@media screen and (min-width: 1158px) {
+
+    .features {
+        padding: 120px 0 120px;
+    }
+
+    .features-container {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .features-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .features-paragraph {
+        flex-basis: calc((100% - 72 ) / 4);
+        max-width: 264px; 
+        max-height: 224px;
+    }
+
+    .features-paragraph-icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 264px;
+        height: 112px;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        background: #F4F4FD;
+        margin-bottom: 8px;
+    }
+
+    .features-head {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        max-width: 264px;
+        margin-bottom: 8px;
+    } 
+    
+    .features-p {
+        font-weight: 400;
+        max-width: 264px;
+    }
+}
+
