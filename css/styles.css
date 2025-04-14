@@ -920,18 +920,26 @@ margin: 0 auto;
     justify-content: center;
 }
 
+.footer-label {
+    margin-bottom: 16px;
+}
+
 .footer-input {
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    width: 288px;
+    opacity: 0.3;
+    width: 100%;
+    max-width: 288px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
+    font-weight: 400;
     padding-left: 16px;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
     color: #ffffff;
+    
 }
 
 input::placeholder,
@@ -950,9 +958,75 @@ textarea::placeholder {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     border: none;
-    display: flex;
-    min-width: 165px;
-    justify-content: center;
+    
+    max-width: 165px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.footer-btn:focus,
+.footer-btn:hover {
+    background-color: #404BBF;
+}
+
+.footer-icon-frame {
+    fill: #FFFFFF;
+    margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-form-box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer-container {
+        margin-right: 24px;
+        margin-left: 108px;
+        max-width: 264px;
+        height: 112px;
+    }
+
+    .logo {
+        justify-content: start;
+    }
+
+    .footer-form-text {
+        justify-content: start;
+        margin-left: 108px; 
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-left: 108px;
+    }
+    
+    .footer-label {
+        margin-right: 24px;
+        margin-bottom: 0;
+    }
+
+    .footer-input {
+        max-width: 264px;
+    }   
+    
+    .footer-btn {
+        height: auto;
+        white-space: nowrap;
+    }
+        
+
+
 }
