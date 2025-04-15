@@ -561,7 +561,7 @@ textarea::placeholder {
 */
 /*Backdrop*/
 
-.backdrop {
+/*.backdrop {
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top: 0;
@@ -806,4 +806,4 @@ textarea::placeholder {
 .modal-btm:hover,
 .modal-btm:focus {
     background-color: #404BBF;
-}
+}*/
