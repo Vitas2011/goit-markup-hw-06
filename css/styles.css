@@ -362,7 +362,7 @@ background-color: #2e2f42;
 background-image: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/dark-mob-1x.jpg);
+    url(../images/darkmob1x.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -374,7 +374,7 @@ margin: 0 auto;
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-            url(../images/dark-mob-2x.jpg); 
+            url(../images/darkmob2x.jpg); 
     }
 }
  
@@ -432,7 +432,7 @@ margin: 0 auto;
         background-image: linear-gradient(
          rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)),
-         url(../images/dark-tab-1x.jpg);
+         url(../images/darktab1x.jpg);
     }
 
     @media screen and (min-resolution: 2x) {
@@ -440,7 +440,7 @@ margin: 0 auto;
             background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-                url(../images/dark-tab-2x.jpg); 
+                url(../images/darktab2x.jpg); 
         }
     }
 
@@ -466,7 +466,7 @@ margin: 0 auto;
         background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
-          url(../images/dark-net-1x.jpg);
+          url(../images/darknet1x.jpg);
     }
 
     @media screen and (min-resolution: 2x) {
@@ -474,7 +474,7 @@ margin: 0 auto;
             background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-                url(../images/dark-net-2x.jpg); 
+                url(../images/darknet2x.jpg); 
         }
     }
 
