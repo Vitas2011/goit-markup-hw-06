@@ -263,7 +263,6 @@ button {
     border: rgba(46, 47, 66, 1);
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
     align-items: center;
     justify-content: center;
 }
@@ -278,8 +277,20 @@ button {
     margin-bottom: auto;
 }
 
-.mobile-menu-ul {
-    gap: 40px;
+.mobile-menu-index.istudio {
+    color: #404BBF;
+}
+
+.mobile-menu-li {
+    margin-bottom: 40px;
+}
+
+.mobile-menu-li:last-child {
+    margin-bottom: 168px;
+}
+
+.mobile-menu-add-a.mobile-com {
+    color:#4D5AE5;
 }
 
 .mobile-menu-index {
@@ -295,8 +306,12 @@ button {
     color: #404BBF;
 }
 
-.mobile-com {
+.mobile-menu-add-li {
     margin-bottom: 24px;
+}
+
+.mobile-menu-add-li:last-child {
+   margin-bottom: 0; 
 }
 
 .mobile-menu-add-a {
@@ -305,16 +320,11 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
-}
-
-.mobile-menu-add-a:hover,
-.mobile-menu-add-a:focus {
-  color: #4D5AE5;
+  font-style: normal;
 }
 
 .mobile-menu-icons {
-    padding-top: 48px;
-    padding-bottom: 40px;
+    margin-top: 48px;
 }
 
 .mobile-menu-icons-ul {
@@ -327,6 +337,7 @@ button {
     width: 40px;
     height: 40px;
 }
+
 
 .mobile-soc-icons {
   width: 100%;  
@@ -353,20 +364,18 @@ button {
 
 /* Hero Section */
 
-.hero-container {
-    padding: 72px 0 72px 0;
-}
 
 .hero {
-background-color: #2e2f42;
-background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-    url(../images/darkmob1x.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-margin: 0 auto;
+ background-color: #2e2f42;
+ background-image: linear-gradient(
+     rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)),
+     url(../images/darkmob1x.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ margin: 0 auto;
+ padding: 72px 52px 72px 52px;
 }
 
 @media screen and (min-resolution: 2x) {
@@ -379,10 +388,6 @@ margin: 0 auto;
 }
  
     
- 
-    
-
-
 .hero-title {
     font-weight: 700px;
     font-size: 36px;
@@ -424,15 +429,13 @@ margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
-  .hero-container {
-     padding: 112px 0 112px 0;
-    }
      
     .hero {
         background-image: linear-gradient(
          rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)),
          url(../images/darktab1x.jpg);
+        padding: 112px 136px 112px 136px;
     }
 
     @media screen and (min-resolution: 2x) {
@@ -458,15 +461,13 @@ margin: 0 auto;
 }
 
 @media screen and (min-width: 1158px) {
-    .hero-container {
-        padding: 188px 0 188px 0;
-    }
-
+    
     .hero {
         background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
           url(../images/darknet1x.jpg);
+        padding: 188px 472px 188px 472px;  
     }
 
     @media screen and (min-resolution: 2x) {
@@ -478,20 +479,14 @@ margin: 0 auto;
         }
     }
 
-    .hero-title {
-        font-size: 56px;
-        line-height: 1.07;
-        max-width: 496px;
-    }
-
     .but-hero {
-        margin-top: 48px;   
+        margin-top: 48px;
     }
 }
 
 /* Features Section*/
 
-.features-container {
+.features {
   padding: 96px 16px 96px 16px;
 }
 
@@ -516,6 +511,8 @@ margin: 0 auto;
  letter-spacing: 0.02em;
  color: #2E2F42; 
  margin-bottom: 8px;
+ display: flex;
+ justify-content: center;
 }
 
 .features-p {
@@ -527,11 +524,15 @@ margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
+    .features-head {
+        justify-content: flex-start;
+    }
+
+
     .features-list {
         flex-direction: row;
         margin-bottom: 0;
-        gap: 72px 24px;
-        
+        gap: 72px 24px;  
     }
 
     .features-paragraph {
@@ -552,11 +553,11 @@ margin: 0 auto;
 @media screen and (min-width: 1158px) {
 
     .features {
-        padding: 120px 0 120px;
+        padding: 120px 156px 120px 156px;
     }
 
     .features-container {
-        padding: 0;
+        padding: 0 15px;
         justify-content: center;
     }
 
@@ -592,6 +593,7 @@ margin: 0 auto;
         max-width: 264px;
         margin-bottom: 8px;
     } 
+
     
     .features-p {
         font-weight: 400;
@@ -698,6 +700,11 @@ margin: 0 auto;
 }
 
 @media screen and (min-width: 1158px) {
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    
     .team-list {
         flex-direction: row;
         margin-bottom: 0;
@@ -710,7 +717,7 @@ margin: 0 auto;
 
 .portfolio {
     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-bottom: 96px; 
 }
 
 .our-portfolio  {
@@ -798,6 +805,12 @@ margin: 0 auto;
 }
 
 @media screen and (min-width: 1158px) {
+    .portfolio {
+        padding-top: 120px;
+        padding-bottom: 120px; 
+    }
+
+
     .portfolio-list {
         display: flex;
         flex-direction: row;
@@ -820,7 +833,7 @@ margin: 0 auto;
 /*  Footer   */
 
 .footer {
-    padding: 96px 0 96px 0;
+    margin-top: 96px;
     background-color: #2E2F42;
 }
 
@@ -830,8 +843,9 @@ margin: 0 auto;
 }
 
 .footer-container {
-    margin-right: 12px;
-    margin-left: 12px;
+    min-height: 100%;
+    margin-bottom: 72px;
+    margin-top: 96px;
 }
 
 .logo {  
@@ -843,11 +857,12 @@ margin: 0 auto;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-}    
+}   
 
 .logo-web {
     margin-bottom: 16px;
 }
+
 
 .studio {
     color: #f4f4fd;
@@ -859,6 +874,9 @@ margin: 0 auto;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+}
+
+.team-people-icon {
     margin-bottom: 72px;
 }
 
@@ -876,7 +894,6 @@ margin: 0 auto;
 .footer-icon {
     display: flex;
     gap: 16px;
-    margin-bottom: 72px;
 }
 
 .footer-icon-li {
@@ -900,8 +917,6 @@ margin: 0 auto;
 }
 
 .footer-form-box {
-    margin-left: 16px;
-    margin-right: 16px;
     margin-bottom: 96px;
 }
 
@@ -982,14 +997,14 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
     .footer {
-        padding: 96px 0 96px 108px;
+        padding: 96px 0 96px 0;
     }
 
     .footer-div {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 0;
+        padding: 0 108px;
     }
 
     .logo {
@@ -1004,8 +1019,8 @@ textarea::placeholder {
     .footer-container {
         margin-right: 24px;
         max-width: 264px;
-        height: 112px;
         margin-left: 0;
+        margin-top: 0;
     }
 
     .footer-form-box {
@@ -1045,19 +1060,22 @@ textarea::placeholder {
 
 @media screen and (min-width: 1158px) {
     .footer {
-        padding: 100px 0 100px 0;
+        padding: 120px 0 120px 0;
     }
 
     .footer-div {
         align-items: baseline;
+        padding: 0 15px;
     }
 
     .footer-container {
-        margin-right: 120px;
+       margin-right: 120px;
+       margin-bottom: 0;
     }
 
     .team-people-icon {
         margin-right: 80px;
+        margin-bottom: 0;
     }
 }
 
