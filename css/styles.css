@@ -489,6 +489,10 @@ button {
   padding: 96px 16px 96px 16px;
 }
 
+.features-container {
+    display: flex;
+}
+
 .features-paragraph-icons {
     display: none;
 }
