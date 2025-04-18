@@ -701,7 +701,11 @@ button {
         gap: 64px 24px;
         justify-content: center;
     }
-
+    
+    .fhc {
+        justify-content: center;
+    }
+ 
 }
 
 @media screen and (min-width: 1158px) {
