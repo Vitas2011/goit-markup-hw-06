@@ -538,6 +538,9 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+    .features-head {
+        justify-content: start;
+       }
 
     .features-list {
         flex-direction: row;
