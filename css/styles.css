@@ -1569,6 +1569,7 @@ textarea::placeholder {
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: #4D5AE5;
+        margin-left: 6px;
     }
     
     .modal-check:checked + .modal-check-text span {
