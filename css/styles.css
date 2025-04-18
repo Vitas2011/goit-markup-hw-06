@@ -1077,6 +1077,7 @@ textarea::placeholder {
     .footer-container {
        margin-right: 0;
        margin-bottom: 0;
+       margin-right: 120px;
     }
 
     .team-people-icon {
