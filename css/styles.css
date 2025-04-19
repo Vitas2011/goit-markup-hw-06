@@ -1260,7 +1260,7 @@ textarea::placeholder {
     .textarea::placeholder {
      font-weight: 400;
      font-size: 12px;
-     line-height: 1.16667;
+     line-height: 1.17;
      letter-spacing: 0.04em;
      color: rgba(46, 47, 66, 0.4);
     }
@@ -1303,7 +1303,7 @@ textarea::placeholder {
 
     .modal-check:checked + .modal-check-text .modal-checkbox {
      background-color: #404BBF;
-     border: none;
+     border: 1px solid #404BBF;
      fill: #F4F4FD;
     }
 
@@ -1320,6 +1320,14 @@ textarea::placeholder {
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: #4D5AE5;
+    }
+
+    .modal-check-policy {
+        font-weight: 400;
+        font-size: 12px; 
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8E8F99;
     }
 
 
