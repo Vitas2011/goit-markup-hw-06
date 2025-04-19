@@ -358,7 +358,7 @@
                                         srcset="./images/img5net.jpg 1x, ./images/img5net2x.jpg 2x"
                                     />
                                     <source media="(min-width:768px)"
-                                        srcset="./images/img5tab.jpg 1x, ./images/tab5tab2x.jpg 2x"
+                                        srcset="./images/img5tab.jpg 1x, ./images/img5tab2x.jpg 2x"
                                     />
                                     <source  media="(max-width:767px)"
                                       srcset="./images/img5mob.jpg 1x, ./images/img52xmob.jpg 2x"
@@ -436,10 +436,10 @@
                             <div class="portfolio-text-imeges">
                                 <picture class="images-foto">
                                     <source media="(min-width:1158px)"
-                                     srcset="./images/img8net.jpg 1x, ./images/img8net2x.jpg 2x"
+                                     srcset="./images/tax-net-min.jpg, ./images/tax-net@2x-min.jpg 2x"
                                     />
                                     <source media="(min-width:768px)"
-                                     srcset="./images/img8tab.jpg 1x, ./images/img8tab2x.jpg 2x"
+                                     srcset="./images/taxtab-min.jpg, ./images/taxtab@2x-min.jpg 2x"
                                     />
                                     <source media="(max-width:767px)"
                                      srcset="./images/img8mob.jpg 1x, ./images/img82xmob.jpg 2x"
@@ -581,7 +581,7 @@
                 </div>
             </div>
         </footer>
-        <div class="backdrop">
+        <div class="backdrop is-open">
             <div class="modal">
                 <button type="button" class="modal-close-btm">
                     <svg class="icons-close" width="8" height="8">
@@ -650,15 +650,16 @@
                           value="true"
                         />
                         <label for="user-privacy" class="modal-check-text">
-                            <svg class="modal-checkbox-icon" width="10" height="8">
-                                 <use href="./images/icons.svg#icon-check"></use>
-                             </svg>
-                            <div class="modal-checkbox-privacy">
-                               I accept the terms and conditions of the
-                              <a class="modal-check-a" href="#">Privacy Policy</a>
-                            </div>  
-                        </label>
-                         
+                            <span class="modal-checkbox">
+                                <svg class="modal-checkbox-icon" width="10" height="8">
+                                   <use href="./images/icons.svg#icon-check"></use>
+                                </svg>
+                            </span>
+                            <span class="modal-check-policy">
+                                I accept the terms and conditions of the
+                                <a class="modal-check-a" href="#">Privacy Policy</a> 
+                            </span>  
+                        </label>  
                     </div>
                     <button class="modal-btm" type="button">Send</button>
                 </form>

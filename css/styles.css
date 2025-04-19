@@ -1282,8 +1282,8 @@ textarea::placeholder {
       cursor: pointer;
     }
 
-    .modal-checkbox-icon {
-     width: 16px;
+    .modal-checkbox {
+     width: 21px;
      height: 16px;
      border-radius: 2px;
      border: 1px solid #2E2F42;
@@ -1294,37 +1294,33 @@ textarea::placeholder {
      border: 1px solid rgba(46, 47, 66, 0.4);
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
      display: inline-flex;
-     background-color: transparent;
     }
   
     .modal-checkbox-icon {
-     display: flex;
      fill: #ffffff;
     }
 
-    .modal-check:checked + .modal-check-text .modal-checkbox-icon {
-     display: block;
-    }
+    
 
-    .modal-checkbox-privacy {
-      max-width: 232px;
-    }
-
-    .modal-check-a {
-      line-height: 1.33333;
-      text-decoration: underline;
-      text-decoration-skip-ink: none;
-      color: #4D5AE5;
-    }
-
-    .modal-check:checked + .modal-check-text {
+    .modal-check:checked + .modal-check-text .modal-checkbox {
      background-color: #404BBF;
      border: none;
      fill: #F4F4FD;
     }
 
-    .modal-check {
+    .modal-check:checked + .modal-checkbox-ic span {
+        display: block;
+    }
+
+    .visually-hidden {
         display: none;
+    }
+
+    .modal-check-a {
+        line-height: 1.33333;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #4D5AE5;
     }
 
 
@@ -1371,6 +1367,7 @@ textarea::placeholder {
         visibility: visible;
         pointer-events: auto;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
     }
     
     .modal {
@@ -1412,7 +1409,9 @@ textarea::placeholder {
     
     .icons-close {
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
       fill: #2E2F42;
+    
     }
     
     
@@ -1513,9 +1512,11 @@ textarea::placeholder {
      min-height: 120px;
      border-radius: 4px;
      resize: none;
+    
       background-color: transparent;
       padding: 8px 16px;
       outline: transparent;
+      
       color: rgba(46, 47, 66, 0.4);
       border: 1px solid rgba(46, 47, 66, 0.4);
       transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1534,23 +1535,23 @@ textarea::placeholder {
     .modal-textarea:focus {
         border-color: #4D5AE5;
     }
-
-    .modal-field-checkbox {
-        display: flex;
+    
+    .visually-hidden {
+       display: none;
     }
-    
-    
+
     .modal-check-text {
+        display: flex;
+        font-weight: 400;
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8E8F99;
+        align-items: center;
         line-height: 1.17;
-        display: flex;
-        align-items: baseline;
     }
     
-    .modal-checkbox-icon {
+    .modal-checkbox {
         width: 16px;
         height: 16px;
         border-radius: 2px;
@@ -1564,20 +1565,28 @@ textarea::placeholder {
         display: inline-flex;
     }
     
+    .modal-checkbox-icon {
+        fill: #F4F4FD;
+    }
+
+    
+    .modal-check:checked + .modal-check-text .modal-checkbox {
+        background-color: #404BBF;
+        border: none;
+        fill: #F4F4FD;
+    }
+
+    .modal-check:checked + .modal-checkbox-ic span {
+        display: block;
+    }
+
     .modal-check-a {
         line-height: 1.33333;
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: #4D5AE5;
-        margin-left: 6px;
     }
-    
-    .modal-check:checked + .modal-check-text span {
-        background-color: #404BBF;
-        border: none;
-        fill: #F4F4FD;
-    }
-    
+
     .modal-btm {
         display: block;
         margin: 0 auto;
@@ -1590,6 +1599,7 @@ textarea::placeholder {
         background-color: #4D5AE5;
         cursor: pointer;
         border: none;
+    
         min-width: 169px;
         font-weight: 500;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1599,11 +1609,4 @@ textarea::placeholder {
     .modal-btm:focus {
         background-color: #404BBF;
     }
-
-    .modal-check {
-        display: none;
-    }
 }
-
-
-
