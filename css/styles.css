@@ -1279,7 +1279,6 @@ textarea::placeholder {
      color: #8E8F99;
      align-items: center;
      font-weight: 400;
-      cursor: pointer;
     }
 
     .modal-checkbox {
